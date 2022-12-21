@@ -1,8 +1,11 @@
-
 # Use Nginx Reverse Proxy to serve Go and Nuxt Services
 
-For understand Nginx implementation as a reverse proxy in defrant Services like `go (api)`
-and `nuxt (web)`
+For understand Nginx implementation as a reverse proxy in different services like `Golang (as Api)` and `Nuxtjs (as Web)`
+
+## Used Technology
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
+![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82)
 
 ## Installtion Requirement
 
