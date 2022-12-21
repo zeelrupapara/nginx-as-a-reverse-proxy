@@ -1,7 +1,6 @@
 <template>
   <div style="text-align: center; margin-top: 20rem">
-    <h1>This is Res :</h1>
-    {{ api }}
+    <h1> {{ api }} </h1>
   </div>
 </template>
 
@@ -19,10 +18,9 @@ export default {
   },
   async created() {
     await this.$axios
-      .get("http://api:8000/")
+      .get("http://localhost:8000/")
       .then((res) => {
-        console.log(res);
-        this.res = res;
+        this.res = res.data;
       })
       .catch((err) => {
         this.res = err;
