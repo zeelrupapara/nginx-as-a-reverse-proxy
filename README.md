@@ -11,8 +11,8 @@ For understand Nginx implementation as a reverse proxy in different services lik
 
 | tool           | version |
 |----------------|---------|
-| `docker`         | *       |
-| `docker-compose` | *       |
+| `docker`         |    *    |
+| `docker-compose` |    *    |
 
 ## Run Locally
 
@@ -42,10 +42,10 @@ Install dependencies
 Run Locally using docker-compose
  - go back to project root
   ```bash 
-  cd ..
+    cd ..
   ```
 - run project throw docker-compose
  ```bash
- docker-compose up
+   docker-compose up
  ```
  After done all process see results in this link : `http://localhost:80/`
