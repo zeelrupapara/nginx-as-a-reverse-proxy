@@ -1,5 +1,6 @@
 <template>
-    <div style="text-align:center;">
+    <div style="text-align:center; margin-top:20rem;">
+        <h1>This is Res :</h1>
         {{ api }}
     </div>
 </template>
@@ -16,12 +17,13 @@ export default {
             return this.res
         }
     },
-    created() {
-        this.$axios.get('http://api:8000/api/v1').then(res)=>({
+    async created() {
+        await this.$axios.get("http://api:8000/").then((res) => {   
+            console.log(res);
             this.res = res
-        }).catch(err)=>({
-            this.res = res
-        })
+      }).catch((err) => {
+        this.res = err
+      });
     },
 }
 </script>

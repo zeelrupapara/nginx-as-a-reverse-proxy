@@ -12,7 +12,7 @@ services:
     command: |
       -c /go/src/app/air.toml
 
-    web:
+  web:
     build:
       context: ./web/
     ports:
@@ -27,7 +27,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx.conf:/etc/nginx/nginx.conf
     depends_on:
       - "api"
       - "web"
